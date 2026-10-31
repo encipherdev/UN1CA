@@ -10,6 +10,17 @@
 </p>
 <p align="center">UN1CA <i>(/ˈu.ni.ka/)</i> is a work-in-progress custom firmware for Samsung Galaxy devices.</p>
 
+> [!WARNING]
+> ### ⚠️ Galaxy M34 5G (`m34x`) Experimental Port — Work In Progress
+> This fork includes initial porting support for the **Samsung Galaxy M34 5G (`SM-M346B2` / `m34x`)** based on One UI 8.0 (Android 16).
+> 
+> **DO NOT FLASH AS A DAILY DRIVER:**
+> - ❌ **RIL / Cellular Data is currently broken:** Shannon modem registers to the cellular network, but Samsung Shannon RIL does not support `RadioConfig@1.3::getSimSlotsStatus()`, causing `SubscriptionManagerService` to fail ICCID mapping (`defaultDataSubId=-1`, `simSlotIndex=-1`). Mobile data interface `rmnet0` stays down.
+> - ⚠️ **Camera:** S22 Camera app crashes due to missing shooting modes; stock M34 camera APK and authentic M34 50MP sensor resolutions must be used. Hex patches for A53 64MP sensor must NOT be applied.
+> - 🔒 **Fuse Bit 8:** Bootloader fuse counter must be protected. Never flash foreign bootloader binaries.
+> 
+> 👉 See detailed documentation, full technical analysis, and build instructions in [**`target/m34x/README.md`**](target/m34x/README.md).
+
 <p align="center">
   <a href="https://github.com/salvogiangri/UN1CA/discussions">🚀 Discussions</a>
   •

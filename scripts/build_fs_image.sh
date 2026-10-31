@@ -220,6 +220,7 @@ GET_AVBTOOL_CMD()
     local CMD
 
     CMD+="avbtool add_hashtree_footer "
+    CMD+="--do_not_generate_fec "
     CMD+="--image \"$OUTPUT_FILE\" "
     CMD+="--partition_size \"$IMAGE_SIZE\" "
     CMD+="--partition_name \"$PARTITION\" "

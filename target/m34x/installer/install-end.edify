@@ -1,0 +1,12 @@
+ui_print(" ");
+ui_print("****************************************");
+ui_print("*                                      *");
+ui_print("*   UN1CA ROM Installation Complete!   *");
+ui_print("*       Special Build for M34 5G       *");
+ui_print("*       >>> Crafted by encipher <<<    *");
+ui_print("*                                      *");
+ui_print("*   Don't forget to Format Data        *");
+ui_print("*           Reboot & Enjoy!            *");
+ui_print("*                                      *");
+ui_print("****************************************");
+ui_print(" ");
